@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h3>Sign Up</h3>
-    <form method="post" action="/signup">
-        Name: <input type="text" name="name"/><br>
-        Email: <input type="text" name="email" id=""><br>
-        Password: <input type="password" name="password"><br>
-        <input type="submit" value="Submit">
-    </form>
-    <h3>Sign In</h3>
-    <form action="/signin" method="post">
-        Email: <input type="text" name="email"><br>
-        Password: <input type="password" name="password"><br>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <div class="block">
+            <h3>Sign Up</h3>
+            <form method="post" action="/signup">
+                Name: <input type="text" name="name"/><br>
+                Email: <input type="text" name="email" id=""><br>
+                Password: <input type="password" name="password"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="block">
+            <h3>Sign In</h3>
+            <form action="/signin" method="post">
+                Email: <input type="text" name="email"><br>
+                Password: <input type="password" name="password"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
